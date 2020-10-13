@@ -3,7 +3,7 @@
 #### GitHub Markdown ####
 https://guides.github.com/features/mastering-markdown/
 
-### Remove .idea from git project ###
+### GIT - Remove .idea from git project ###
 ```
 echo '.idea' >> .gitignore
 git rm -r --cached .idea
@@ -16,13 +16,13 @@ git push
 https://plugins.jetbrains.com/plugin/12778-quick-file-preview
 
 
-##### Disable network printers auto install #####
+##### UBUNTU - Disable network printers auto install #####
 ```bash
 sudo systemctl stop cups-browsed
 sudo systemctl disable cups-browsed
 ```
 
-### Reset ID sequence in database ###
+### RAILS - Reset ID sequence in database ###
 ```bash
 rails g task database reset_id_columns
 ```
@@ -39,3 +39,6 @@ end
 ```bash
 rake database:reset_id_columns
 ```
+
+#### RAILS - Routes ####
+http://localhost:3000/rails/info/routes
