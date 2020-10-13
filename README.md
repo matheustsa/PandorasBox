@@ -14,3 +14,10 @@ git push
 
 #### RubyMine plugins ####
 https://plugins.jetbrains.com/plugin/12778-quick-file-preview
+
+
+##### Disable network printers auto install #####
+```
+sudo systemctl stop cups-browsed
+sudo systemctl disable cups-browsed
+```
