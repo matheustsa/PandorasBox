@@ -1,0 +1,105 @@
+<templateSet group="myTemplates">
+  <template name="privar" value="private var " description="Kotlin   -  insert &quot;private var&quot; prefix" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="prival" value="private val " description="Kotlin  -  insert &quot;private val&quot; prefix" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="fgbd" value="= fragView.findViewById(R.id.$VIEWID$) as $CAST$ $END$" description="FindViewById in Fragment" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEWID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAST" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="invis" value="$VIEW$.visibility = View.INVISIBLE $END$" description="View.visibility =View.INVISIBLE" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="plvar" value="private lateinit var $NEW_VAR$ $END$" description="private lateinit var" toReformat="false" toShortenFQNames="true">
+    <variable name="NEW_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="tms" value="android.widget.Toast&#10;    .makeText&#10;        $context$, &#10;        &quot;$END$&quot;, &#10;        android.widget.Toast.LENGTH_SHORT &#10;    ).show()" description="Toast Message Short" toReformat="false" toShortenFQNames="true">
+    <variable name="context" expression="groovyScript(&quot;_1.endsWith('Activity') ? 'this@'+_1 : 'activity'&quot;, kotlinClassName());" defaultValue="this" alwaysStopAt="true" />
+  </template>
+  <template name="txv" value="TextView" description="TextView" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="vis" value="$VIEW$.visibility = View.VISIBLE $END$" description="View.visibility = View.VISIBLE" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="plval" value="private lateinit val $NEW_VAL$ $END$" description="private lateinit val" toReformat="false" toShortenFQNames="true">
+    <variable name="NEW_VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="--classes" value="/*&#10; * 1 - Bárbaro&#10; * 2 - Bardo&#10; * 3 - Bruxo&#10; * 4 - Clérigo&#10; * 5 - Druida&#10; * 6 - Feiticeiro&#10; * 7 - Guerreiro&#10; * 8 - Ladino&#10; * 9 - Mago&#10; * 10 - Monge&#10; * 11 - Paladino&#10; * 12 - Ranger&#10; */" description="Lista de classes" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="--pericias" value="/*&#10;FORÇA&#10;• Athletics (engloba saltar, escalar e nadar, e que não pode ser traduzido como “atletismo”)&#10;&#10;DESTREZA&#10;• Acrobatics (acrobacia)&#10;• Sleight of Hand (prestidigitação)&#10;• Stealth (furtividade)&#10;&#10;INTELIGÊNCIA&#10;• Arcana (conhecimento arcano)&#10;• History (conhecimento de história)&#10;• Nature (conhecimento da natureza)&#10;• Religion (conhecimento religioso)&#10;• Search (Procurar)&#10;&#10;SABEDORIA&#10;• Animal Handling (lidar com animais)&#10;• Insight (sentir motivação)&#10;• Medicine (cura)&#10;• Perception (percepção; engloba observar e ouvir)&#10;• Survival (sobrevivência)&#10;&#10;CARISMA&#10;• Deception (blefar, enganar)&#10;• Intimidation (intimidação)&#10;• Performance (atuação)&#10;• Persuasion (persuasão)&#10;*/" description="Lista de perícias" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="bt" value="Button" description="Button" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="rid" value="R.id.$VIEW$ $END$" description="R.id.*" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="gone" value="$VIEW$.visibility = View.GONE $END$" description="View.visibility = Vew.GONE" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="--backgrounds" value="/*&#10; * 1 - Acolyte&#10; * 2 - Charlatan&#10; * 3 - Criminal&#10; * 4 - Entertainer&#10; * 5 - Folk Hero&#10; * 6 - Guild Artisan&#10; * 7 - Hermit&#10; * 8 - Noble&#10; * 9 - Outlander&#10; * 10 - Sailor&#10; * 11 - Sage&#10; * 12 - Soldier&#10; * 13 - Urchin&#10; */&#10;&#10;/*&#10; * 1 - Acólito&#10; * 2 - Charlatão&#10; * 3 - Criminoso&#10; * 4 - Artista&#10; * 5 - Herói do Povo&#10; * 6 - Artesão da Guilda&#10; * 7 - Eremita&#10; * 8 - Nobre&#10; * 9 - Forasteiro&#10; * 10 - Marinheiro&#10; * 11 - Sábio&#10; * 12 - Soldado&#10; * 13 - Órfão&#10; */&#10;&#10;" description="(Lista de backgrounds)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="fvbid" value="$OBJECT$ = findViewById(R.id.$VIEW$) $END$" description="findViewById(R.id.*)" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="socl" value="$OBJECT$.setOnClickListener($METHOD$) $END$" description=".setOnClickListener()" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="pvfl" value="private val $OBJECT$: $VIEW$ by lazy { findViewById&lt;$VIEW$&gt;(R.id.$ID$) } $END$&#10;" description="private val by lazy findViewById()" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>
