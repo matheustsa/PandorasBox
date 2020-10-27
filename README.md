@@ -42,3 +42,18 @@ rake database:reset_id_columns
 
 #### RAILS - Routes ####
 http://localhost:3000/rails/info/routes
+
+
+## Dokku ##
+```
+ssh 
+dokku apps:list
+dokku postgres:list
+dokku postgres:info dare-homologacao-db
+dokku postgres:expose dare-homologacao-db
+dokku postgres:connect dare-homologacao-db
+\dt 
+TABLE mytablename;
+\COPY my_table TO '/tmp/my_table.csv' CSV HEADER
+scp my_table.csv mtsa@[-IP-]:~/Downloads/
+```
