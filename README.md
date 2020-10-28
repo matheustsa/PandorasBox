@@ -48,10 +48,17 @@ http://localhost:3000/rails/info/routes
 ```
 ssh 
 dokku apps:list
+dokku proxy:ports dare-hom
+dokku logs dare-hom
+dokku ps:restart dare-hom
+
+
 dokku postgres:list
 dokku postgres:info dare-homologacao-db
 dokku postgres:expose dare-homologacao-db
 dokku postgres:connect dare-homologacao-db
+
+
 \dt 
 TABLE mytablename;
 \COPY my_table TO '/tmp/my_table.csv' CSV HEADER
