@@ -64,3 +64,10 @@ TABLE mytablename;
 \COPY my_table TO '/tmp/my_table.csv' CSV HEADER
 scp my_table.csv mtsa@[-IP-]:~/Downloads/
 ```
+
+### POSTGRES ###
+```
+CREATE TABLE new_table AS 
+TABLE table_to_import 
+WITH NO DATA;
+```
