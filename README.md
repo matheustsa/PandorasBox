@@ -71,3 +71,9 @@ CREATE TABLE new_table AS
 TABLE table_to_import 
 WITH NO DATA;
 ```
+
+```
+select * from A 
+  where (col1, col2) not in
+   ( select col1, col2 from B )
+```
