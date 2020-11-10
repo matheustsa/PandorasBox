@@ -40,6 +40,27 @@ end
 rake database:reset_id_columns
 ```
 
+### RAILS - Set user passwd via console ###
+```bash
+rails console -e production
+```
+```bash
+user = User.where(id: 1).first
+```
+```bash
+user.password = '123456'
+```
+```bash
+user.password_confirmation = '123456'
+```
+```bash
+user.save!
+```
+Extra: send email notification informing that admin changed your password
+```bash
+user.send_only_admin_changed_your_password_notification!
+```
+
 #### RAILS - Routes ####
 http://localhost:3000/rails/info/routes
 
