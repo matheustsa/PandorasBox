@@ -1,6 +1,6 @@
 ## DOKKU - Useful commands ##
 
-#### Miscellaneous useful commands ####
+#### Miscellaneous ####
 Run Rake tasks: ```dokku run myapp rake db:migrate```
 
 Open Rails console: ```dokku run myapp rails c```
@@ -19,7 +19,7 @@ Check docker process: ```docker ps```
 Remove unused Dokku: ```dokku cleanup```
 
 
-### Cnnection and Database ###
+### Connection and Database ###
 ```
 ssh 
 dokku apps:list
