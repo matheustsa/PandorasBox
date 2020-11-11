@@ -1,5 +1,26 @@
 # Utils #
 
+## DOKKU - Useful commands ##
+Miscellaneous useful commands
+Run Rake tasks: ```dokku run myapp rake db:migrate```
+
+Open Rails console: ```dokku run myapp rails c```
+
+Tail Logs: ```dokku logs myapp -t```
+
+NGINX logs
+- access: ```dokku nginx:access-logs myapp```
+- errors: ```dokku nginx:error-logs myapp```
+
+
+Restart the app: ```dokku ps:restart myapp```
+
+Check docker process: ```docker ps```
+
+Remove unused Dokku: ```dokku cleanup```
+
+
+
 #### GitHub Markdown ####
 https://guides.github.com/features/mastering-markdown/
 
