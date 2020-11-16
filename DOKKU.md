@@ -1,5 +1,14 @@
 ## DOKKU - Useful commands ##
 
+#### Process and Container Management ####
+http://dokku.viewdocs.io/dokku~v0.7.0/deployment/process-management/#process-and-container-management
+
+#### SSL Configuration ####
+http://dokku.viewdocs.io/dokku~v0.20.4/configuration/ssl/
+
+#### Nginx ####
+http://dokku.viewdocs.io/dokku~v0.4.1/nginx/
+
 #### Miscellaneous ####
 Run Rake tasks: ```dokku run myapp rake db:migrate```
 
