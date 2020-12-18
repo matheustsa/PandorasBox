@@ -1,4 +1,9 @@
-### UBUNTU ###
+# UNIX #
+### SSH Auth ###
+```
+https://linuxize.com/post/how-to-setup-passwordless-ssh-login/
+```
+
 #### Mount directory with rw permissions ####
 ```
 https://linuxize.com/post/how-to-mount-cifs-windows-share-on-linux/
