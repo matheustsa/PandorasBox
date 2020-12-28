@@ -47,3 +47,16 @@ TABLE mytablename;
 \COPY my_table TO '/tmp/my_table.csv' CSV HEADER DELIMITER ';'
 scp my_table.csv mtsa@__IP__:~/Downloads/
 ```
+
+### List Containers ###
+Count all containers
+
+```sudo docker ps -q $1 | wc -l```
+
+Count EXITED containers
+
+```sudo docker ps --all -q -f status=exited | wc -l```
+
+Remove EXITED containers
+
+```docker rm $(docker ps --all -q -f status=exited)```
