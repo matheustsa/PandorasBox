@@ -50,8 +50,11 @@ scp my_table.csv mtsa@__IP__:~/Downloads/
 
 ### List and Remove Containers ###
 Count all containers: ```sudo docker ps -q $1 | wc -l```
+
 Count EXITED containers: ```sudo docker ps --all -q -f status=exited | wc -l```
+
 Remove EXITED containers: ```docker rm $(docker ps --all -q -f status=exited)```
+
 
 ### Container Configuration ###
 Show environment variables: ```dokku config <app>```
