@@ -14,3 +14,6 @@ https://linuxize.com/post/how-to-mount-cifs-windows-share-on-linux/
 sudo systemctl stop cups-browsed
 sudo systemctl disable cups-browsed
 ```
+
+### Convert file from iso-8859-1 to utf-8 using iconv ###
+```iconv -f ISO-8859-1 -t UTF8//TRANSLIT SOURCE_FILE -o NEW_FILE```
