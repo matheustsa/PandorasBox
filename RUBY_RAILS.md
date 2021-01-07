@@ -38,3 +38,7 @@ user.save!
 ```bash
 user.send_only_admin_changed_your_password_notification!
 ```
+
+### Fix Gemfile.lock permission error ###
+go to app folder, open terminal there and type:
+```sudo chown -R $(whoami):$(whoami) $(pwd)```
