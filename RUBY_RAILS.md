@@ -45,3 +45,6 @@ go to app folder, open terminal there and type:
 
 ### Encode string in UTF-8 ###
 ```string.encode("UTF-8", :invalid => :replace, :undef => :replace, :replace => "?")```
+
+### Working with directories ###
+```https://www.rubyguides.com/2020/02/ruby-dir/```
