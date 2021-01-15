@@ -28,8 +28,8 @@ rake database:reset_id_columns
 ```bash
 rails console -e production
 user = User.where(id: 1).first
-user.password = '123456'
-user.password_confirmation = '123456'
+user.password = '12345678'
+user.password_confirmation = '12345678'
 user.save!
 ```
 ##### If you need to connect to console in dokku, see DOKKU.md #####
