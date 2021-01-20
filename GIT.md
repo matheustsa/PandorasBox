@@ -1,4 +1,5 @@
 # GIT #
+https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
 
 #### Remove .idea from git project ####
 ```
@@ -8,3 +9,4 @@ git add .gitignore
 git commit -m 'remove .idea folder from project'
 git push
 ```
+
