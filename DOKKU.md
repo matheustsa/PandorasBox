@@ -58,3 +58,17 @@ Remove EXITED containers: ```docker rm $(docker ps --all -q -f status=exited)```
 
 ### Container Configuration ###
 Show environment variables: ```dokku config <app>```
+
+### LetsEncrypt ###
+https://github.com/dokku/dokku-letsencrypt
+
+#### Gerar crtificado ####
+```
+dokku letsencrypt <app>
+```
+
+#### Para renovar automaticamente: ####
+```
+dokku letsencrypt:auto-renew <app>
+dokku letsencrypt:cron-job --add <app>
+```
