@@ -1,4 +1,10 @@
 # POSTGRES #
+
+### Version ###
+```
+pg_config --version
+```
+
 #### Copiar tabela ####
 ```
 CREATE TABLE new_table AS 
