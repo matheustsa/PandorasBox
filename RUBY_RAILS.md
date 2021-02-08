@@ -1,5 +1,8 @@
 # RUBY AND RAILS #
 
+### Env install and config ###
+https://blog.corsego.com/install-ruby-on-rails-6-on-ubuntu
+
 #### RAILS - Routes ####
 http://localhost:3000/rails/info/routes
 
