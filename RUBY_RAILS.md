@@ -98,7 +98,7 @@ user.password = '12345678'
 user.password_confirmation = '12345678'
 user.save!
 ```
-##### If you need to connect to console in dokku, see DOKKU.md #####
+##### If you need to connect to console in dokku, see DOKKU.md (https://github.com/matheustsa/PandorasBox/blob/main/DOKKU.md) #####
 
 - ##### Extra: send email notification informing that admin changed your password #####
 ```bash
