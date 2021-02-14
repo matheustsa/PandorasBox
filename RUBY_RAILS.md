@@ -1,12 +1,75 @@
 # RUBY AND RAILS #
 
-### Env install and config ###
-https://blog.corsego.com/install-ruby-on-rails-6-on-ubuntu
+### Env install and config (ruby 3.0.0 and rails 6.1.1 with rvm using postgres) ###
 
-#### RAILS - Routes ####
+- #### System ####
+```
+sudo apt-get update
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev libgdbm-dev libncurses5-dev automake libtool bison
+```
+
+- #### RVM ####
+```
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+curl -sSL https://get.rvm.io | bash -s stable
+source ~/.rvm/scripts/rvm
+rvm install 3.0.0
+rvm use 3.0.0 --default
+ruby -v
+```
+
+- #### Rails ####
+```
+gem install rails -v 6.1.1
+```
+
+- #### Node and Yarn ####
+```
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt update
+sudo apt-get install -y redis-server redis-tools nodejs yarn
+```
+
+- #### Git ####
+```
+git config --global color.ui true
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR@EMAIL.com"
+ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"
+
+cat ~/.ssh/id_rsa.pub
+
+https://github.com/settings/keys
+
+ssh -T git@github.com
+```
+
+- #### Postgres ####
+```
+sudo apt-get install -y postgresql libpq-dev
+sudo su postgres
+createuser --interactive
+ubuntu
+y 
+exit
+```
+
+- #### New Project ####
+```
+rails new myapp -d postgresql
+cd myapp
+bundle
+rails db:create db:migrate
+rails s
+```
+
+### RAILS - Routes ###
 http://localhost:3000/rails/info/routes
 
-#### RubyMine plugins ####
+### RubyMine plugins ###
 https://plugins.jetbrains.com/plugin/12778-quick-file-preview
 
 ### Reset ID sequence in database ###
