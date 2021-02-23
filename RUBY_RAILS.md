@@ -66,11 +66,17 @@ rails db:create db:migrate
 rails s
 ```
 
+------------
+
 ### RAILS - Routes ###
 http://localhost:3000/rails/info/routes
 
+------------
+
 ### RubyMine plugins ###
 https://plugins.jetbrains.com/plugin/12778-quick-file-preview
+
+------------
 
 ### Reset ID sequence in database ###
 ```bash
@@ -90,6 +96,8 @@ end
 rake database:reset_id_columns
 ```
 
+------------
+
 ### Set user passwd via console ###
 ```bash
 rails console -e production
@@ -105,9 +113,11 @@ user.save!
 user.send_only_admin_changed_your_password_notification!
 ```
 
-### Fix Gemfile.lock permission error ###
+## Fix Gemfile.lock permission error ##
 go to app folder, open terminal there and type:
 ```sudo chown -R $(whoami):$(whoami) $(pwd)```
+
+------------
 
 ### Encode string in UTF-8 ###
 ```string.encode("UTF-8", :invalid => :replace, :undef => :replace, :replace => "?")```
