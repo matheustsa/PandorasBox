@@ -55,6 +55,7 @@ createuser --interactive
 ubuntu
 y 
 exit
+pg_config --version
 ```
 
 - #### New Project ####
