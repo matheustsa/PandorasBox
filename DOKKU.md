@@ -9,6 +9,9 @@ http://dokku.viewdocs.io/dokku~v0.20.4/configuration/ssl/
 #### Nginx ####
 http://dokku.viewdocs.io/dokku~v0.4.1/nginx/
 
+#### Redis ####
+https://github.com/dokku/dokku-redis
+
 ## Miscellaneous ##
 Run Rake tasks: ```dokku run myapp rake db:migrate```
 
