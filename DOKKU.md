@@ -75,3 +75,11 @@ dokku letsencrypt <app>
 dokku letsencrypt:auto-renew <app>
 dokku letsencrypt:cron-job --add <app>
 ```
+
+### Checar containers ###
+```
+sudo docker ps -a --filter status=exited
+sudo docker ps -a|wc -l
+sudo docker ps -a | grep "\.16" | awk '{print $1}'
+sudo docker ps -a | grep "\.15" | awk '{print $1}'
+```
