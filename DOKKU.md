@@ -69,6 +69,10 @@ https://github.com/dokku/dokku-letsencrypt
 ```
 dokku letsencrypt <app>
 ```
+se der erro de permissão ao tentar gerar:
+```
+chown -R dokku:dokku /home/dokku/<app>/
+```
 
 #### Para renovar automaticamente: ####
 ```
