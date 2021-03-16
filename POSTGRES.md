@@ -22,3 +22,8 @@ select * from A
   where (col1, col2) not in
    ( select col1, col2 from B )
 ```
+
+### remote connect ###
+```
+psql -h 127.0.0.1 -p 5432 -U postgres
+```
