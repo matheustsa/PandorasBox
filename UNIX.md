@@ -24,3 +24,15 @@ sudo systemctl disable cups-browsed
 ```
 sudo systemctl enable postgresql
 ```
+
+systemctl:
+
+- ```start``` - Start a service
+
+- ```stop``` - Stop a service
+
+- ```status``` - Show the status of a service
+
+- ```enable``` - This enables a service so that it starts automatically
+
+- ```disable``` - Don't start it automatically
