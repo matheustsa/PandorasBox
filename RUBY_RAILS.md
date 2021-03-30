@@ -50,7 +50,7 @@ ssh -T git@github.com
 
 - #### Postgres ####
 ```
-sudo apt-get install -y postgresql libpq-dev
+sudo apt-get install -y postgresql postgresql-contrib libpq-dev
 sudo su postgres
 createuser --interactive
 ubuntu
@@ -61,7 +61,7 @@ pg_config --version
 
 - #### New Project ####
 ```
-rails new myapp -d postgresql
+rails new myapp -T -d postgresql
 cd myapp
 bundle
 rails db:create db:migrate
