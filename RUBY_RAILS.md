@@ -20,6 +20,7 @@ ruby -v
 
 - #### Rails ####
 ```
+gem install nokogiri
 gem install rails -v 6.1.1
 ```
 
