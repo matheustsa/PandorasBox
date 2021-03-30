@@ -51,11 +51,8 @@ ssh -T git@github.com
 - #### Postgres ####
 ```
 sudo apt-get install -y postgresql postgresql-contrib libpq-dev
-sudo su postgres
-createuser --interactive
-ubuntu
-y 
-exit
+sudo su - postgres
+createuser -s -r <user>
 pg_config --version
 ```
 
