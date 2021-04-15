@@ -36,3 +36,7 @@ systemctl:
 - ```enable``` - This enables a service so that it starts automatically
 
 - ```disable``` - Don't start it automatically
+
+
+### make install mkdir error
+https://stackoverflow.com/questions/62160017/error-installing-rails-error-failed-to-build-gem-native-extension-ubuntu-20-0
