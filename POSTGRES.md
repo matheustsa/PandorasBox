@@ -27,3 +27,11 @@ select * from A
 ```
 psql -h 127.0.0.1 -p 5432 -U postgres
 ```
+
+https://avroblog.com/en/blog/content/How-to-restart-PostgreSQL
+
+set local to <trust>
+```
+sudo gedit /etc/postgresql/12/main/pg_hba.conf
+```
+
