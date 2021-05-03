@@ -40,3 +40,12 @@ systemctl:
 
 ### make install mkdir error
 https://stackoverflow.com/questions/62160017/error-installing-rails-error-failed-to-build-gem-native-extension-ubuntu-20-0
+
+----------------
+
+## Set primary sound source on startup
+Show sources with: ```pactl list short sinks```
+
+Test switch: ```pactl set-default-sink <Your_Device_Name>```
+
+Then add the same line to "Startup Applications" command text field
