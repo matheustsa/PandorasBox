@@ -127,6 +127,7 @@ go to app folder, open terminal there and type:
 ### Working with directories ###
 ```https://www.rubyguides.com/2020/02/ruby-dir/```
 
+------------
 
 ### Oracle OCI8 
 ```sudo apt-get install libaio-dev```
@@ -138,3 +139,12 @@ echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1" >> ~/.bashrc
 exec bash
 gem install ruby-oci8
 ```
+
+------------
+### Set NSL_LANG env var
+
+```echo "export NLS_LANG=en_US.UTF-8" >> ~/.bashrc```
+or
+```echo "export NLS_LANG=$LANG" >> ~/.bashrc```
+
+And don't forget to ```exec bash``` to reload your terminal
