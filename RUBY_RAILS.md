@@ -126,3 +126,15 @@ go to app folder, open terminal there and type:
 
 ### Working with directories ###
 ```https://www.rubyguides.com/2020/02/ruby-dir/```
+
+
+### Oracle OCI8 
+```sudo apt-get install libaio-dev```
+
+Download last ```BASIC``` and ```SDK``` .zip packages in: http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
+
+```
+echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_1" >> ~/.bashrc
+exec bash
+gem install ruby-oci8
+```
