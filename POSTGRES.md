@@ -35,3 +35,9 @@ set local to <trust>
 sudo gedit /etc/postgresql/12/main/pg_hba.conf
 ```
 
+------------
+
+  ### Import pg_dump from Heroku to localhost
+  ```
+  pg_restore --verbose --clean --no-acl --no-owner -h localhost -U <pg_user> -d <database> <heroku-dump>
+  ```
