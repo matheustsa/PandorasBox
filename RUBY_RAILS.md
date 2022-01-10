@@ -65,6 +65,14 @@ rails db:create db:migrate
 rails s
 ```
 
+- #### ZSH + RBENV ####
+```
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshenv
+echo 'eval "$(rbenv init -)"' >> ~/.zshenv
+echo 'source $HOME/.zshenv' >> ~/.zshrc
+exec $SHELL
+```
+
 - #### Oracle CLI ####
 https://stackoverflow.com/questions/20084783/how-to-install-ruby-oci8-the-ruby-client-for-oracle-on-debian-based-systems-al
 
