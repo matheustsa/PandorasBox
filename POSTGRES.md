@@ -41,3 +41,8 @@ sudo gedit /etc/postgresql/12/main/pg_hba.conf
   ```
   pg_restore --verbose --clean --no-acl --no-owner -h localhost -U <pg_user> -d <database> <heroku-dump>
   ```
+
+------------
+  
+### Allow no password for localhost ###
+https://dba.stackexchange.com/questions/83164/postgresql-remove-password-requirement-for-user-postgres
