@@ -49,3 +49,6 @@ Show sources with: ```pactl list short sinks```
 Test switch: ```pactl set-default-sink <Your_Device_Name>```
 
 Then add the same line to "Startup Applications" command text field
+
+## Fix dual boot wrong time clock
+```timedatectl set-local-rtc 1```
