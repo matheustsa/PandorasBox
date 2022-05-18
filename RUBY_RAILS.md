@@ -156,3 +156,7 @@ or
 ```echo "export NLS_LANG=$LANG" >> ~/.bashrc```
 
 And don't forget to ```exec bash``` to reload your terminal
+
+------------
+### Redo migrations
+https://riptutorial.com/ruby-on-rails/example/7069/redo-migrations
