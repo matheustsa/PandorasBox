@@ -1,4 +1,21 @@
 # UNIX #
+## Remap keyboard key ##
+ 1. First use the command ```xev``` in your terminal to find the KEYCODES for the keys you want to remap.
+ 
+ 2. Then use ```xmodmap -e "keycode [key to remap] = [new key]"```
+ 
+ For example, if you want to remap PAUSE key to act like END key when pressed.
+ 
+ ```xmodmap -e "keycode [PAUSE keycode] = [END keycode]"```
+ 
+ Or just use its symbol ```xmodmap -e "keycode [PAUSE keycode] = End"```
+ 
+ Alternatively ```setxkbmap``` command works too: ```setxkbmap -option "keycode 127=End"```.
+ 
+ **PS: This will NOT persist after reboot.** To persist, you can create a script that contains the command, and then configure your system to run that script automatically on startup.
+
+-----
+
 ## SSH Auth ##
 ```
 https://linuxize.com/post/how-to-setup-passwordless-ssh-login/
