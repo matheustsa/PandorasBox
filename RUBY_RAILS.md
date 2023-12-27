@@ -160,3 +160,11 @@ And don't forget to ```exec bash``` to reload your terminal
 ------------
 ### Redo migrations
 https://riptutorial.com/ruby-on-rails/example/7069/redo-migrations
+
+
+------------
+### Fix postgres error "could not change directory to '/home/user': Permission denied"
+
+```stat -c "%G" <the problem folder, e.g. `/home/user`>```
+then
+```sudo usermod -aG <the output from last command> postgres```
