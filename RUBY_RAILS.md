@@ -1,69 +1,14 @@
-# RUBY AND RAILS #
+# RUBY AND RAILS INSTALL #
 
-### Env install and config (ruby 3.0.0 and rails 6.1.1 with rvm using postgres) ###
+Follow instructions for [Ubuntu](https://gorails.com/setup/ubuntu/22.04) or [Windows](https://gorails.com/setup/windows/10)
 
-- #### System ####
-```
-sudo apt-get update
-sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libaio-dev unzip
-```
+#### Fix possible postgres error *"could not change directory to '/home/user': Permission denied"*
 
-- #### RVM ####
-```
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-curl -sSL https://get.rvm.io | bash -s stable
-source ~/.rvm/scripts/rvm
-rvm install 3.0.0
-rvm use 3.0.0 --default
-ruby -v
-```
+```stat -c "%G" <the problem folder, e.g. `/home/user`>```  
+then  
+```sudo usermod -aG <the output from last command> postgres```  
 
-- #### Rails ####
-```
-gem install nokogiri
-gem install rails -v 6.1.1
-```
-
-- #### Node and Yarn ####
-```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-sudo apt update
-sudo apt-get install -y redis-server redis-tools nodejs yarn
-```
-
-- #### Git ####
-```
-git config --global color.ui true
-git config --global user.name "YOUR NAME"
-git config --global user.email "YOUR@EMAIL.com"
-ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"
-
-cat ~/.ssh/id_rsa.pub
-
-https://github.com/settings/keys
-
-ssh -T git@github.com
-```
-
-- #### Postgres ####
-```
-sudo apt-get install -y postgresql postgresql-contrib libpq-dev
-sudo su - postgres
-createuser -s -r <user>
-pg_config --version
-```
-
-- #### New Project ####
-```
-rails new myapp -T -d postgresql
-cd myapp
-bundle
-rails db:create db:migrate
-rails s
-```
+-----------
 
 - #### ZSH + RBENV ####
 ```
@@ -72,6 +17,9 @@ echo 'eval "$(rbenv init -)"' >> ~/.zshenv
 echo 'source $HOME/.zshenv' >> ~/.zshrc
 exec $SHELL
 ```
+
+------------
+
 
 - #### Oracle CLI ####
 https://stackoverflow.com/questions/20084783/how-to-install-ruby-oci8-the-ruby-client-for-oracle-on-debian-based-systems-al
@@ -161,10 +109,3 @@ And don't forget to ```exec bash``` to reload your terminal
 ### Redo migrations
 https://riptutorial.com/ruby-on-rails/example/7069/redo-migrations
 
-
-------------
-### Fix postgres error "could not change directory to '/home/user': Permission denied"
-
-```stat -c "%G" <the problem folder, e.g. `/home/user`>```
-then
-```sudo usermod -aG <the output from last command> postgres```
