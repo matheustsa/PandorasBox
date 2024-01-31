@@ -2,6 +2,27 @@
 
 Follow instructions for [Ubuntu](https://gorails.com/setup/ubuntu/22.04) or [Windows](https://gorails.com/setup/windows/10)
 
+Then:
+  
+```ruby
+rails new myapp -n MyApp -d postgresql
+```
+Optional tags: `--css tailwind --skip-javascript`
+```ruby
+cd myapp/
+bundle add rspec-rails bullet brakeman pry pry-byebug --group "development, test"
+bundle add kaminari rubocop friendly_id formtastic devise turbo-rails stimulus-rails erb-formatter
+rails generate tailwindcss:install
+rails generate devise:install
+rails turbo:install
+rails turbo:install:redis
+rails stimulus:install
+rails g controller home index
+rails g devise user
+rails db:create db:migrate
+rails s
+```
+
 #### Fix possible postgres error *"could not change directory to '/home/user': Permission denied"*
 
 ```stat -c "%G" <the problem folder, e.g. `/home/user`>```  
