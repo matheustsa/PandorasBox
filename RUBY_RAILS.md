@@ -11,9 +11,10 @@ Optional tags: `--css tailwind --skip-javascript`
 ```ruby
 cd myapp/
 bundle add rspec-rails bullet brakeman pry pry-byebug --group "development, test"
-bundle add kaminari rubocop friendly_id formtastic devise turbo-rails stimulus-rails erb-formatter
+bundle add kaminari rubocop friendly_id formtastic devise importmap-rails turbo-rails stimulus-rails erb-formatter
 rails generate tailwindcss:install
 rails generate devise:install
+rails importmap:install
 rails turbo:install
 rails turbo:install:redis
 rails stimulus:install
